@@ -52,6 +52,10 @@ Clone repository as `sfv`:
 ```bash
 $ git clone https://github.com/idleberg/vscode-sfv sfv
 ```
+## Related
+
+- [atom-language-sfv](https://github.com/idleberg/atom-language-sfv)
+- [sublime-sfv](https://github.com/idleberg/sublime-sfv)
 
 ## License
 
