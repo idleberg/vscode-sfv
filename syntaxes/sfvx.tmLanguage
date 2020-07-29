@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Simple File Verification Extended</string>
+
+    <key>fileTypes</key>
+    <array>
+        <string>sfvx</string>
+    </array>
+
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>match</key>
+            <string>^\s*;.*$</string>
+            <key>name</key>
+            <string>comment.line.sfv.extended</string>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>\s+\w{32,128}$</string>
+            <key>name</key>
+            <string>constant.other.sfv.extended</string>
+        </dict>
+    </array>
+
+    <key>scopeName</key>
+    <string>source.sfv.extended</string>
+
+    <key>uuid</key>
+    <string>DAE58078-2154-435C-848E-0377A857BCF3</string>
+</dict>
+</plist>

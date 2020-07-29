@@ -5,7 +5,7 @@
 [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/idleberg.sfv.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=idleberg.sfv)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/vscode-sfv)](https://circleci.com/gh/idleberg/vscode-sfv)
 
-Syntax highlighting for SFV files (see [Simple File Verification](https://www.wikiwand.com/en/Simple_file_verification))
+Syntax highlighting for SFV files (see [Simple File Verification](https://www.wikiwand.com/en/Simple_file_verification)). Also supports extended SFV files (`.sfvx`) as introduced by [`sfv-cli`](https://www.npmjs.com/package/sfv-cli).
 
 ## Installation
 

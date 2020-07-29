@@ -64,6 +64,17 @@
                     "sfv"
                 ],
                 "configuration": "./config/sfv.json"
+            },
+            {
+                "id": "sfvx",
+                "aliases": [
+                    "Simple File Verification Extended",
+                    "SFVX"
+                ],
+                "extensions": [
+                    "sfvx"
+                ],
+                "configuration": "./config/sfv.json"
             }
         ],
         "grammars": [
@@ -71,6 +82,11 @@
                 "language": "sfv",
                 "scopeName": "source.sfv",
                 "path": "./syntaxes/sfv.tmLanguage"
+            },
+            {
+                "language": "sfvx",
+                "scopeName": "source.sfv.extended",
+                "path": "./syntaxes/sfvx.tmLanguage"
             }
         ]
     }
