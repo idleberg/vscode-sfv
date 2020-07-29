@@ -1,6 +1,7 @@
 # vscode-sfv
 
 [![The MIT License](https://flat.badgen.net/badge/license/MIT/orange)](http://opensource.org/licenses/MIT)
+[![GNU General Public License](https://flat.badgen.net/badge/license/GPL%20v2/orange)](http://www.gnu.org/licenses/gpl-2.0.html)
 [![GitHub](https://flat.badgen.net/github/release/idleberg/vscode-sfv)](https://github.com/idleberg/vscode-sfv/releases)
 [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/idleberg.sfv.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=idleberg.sfv)
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/vscode-sfv)](https://circleci.com/gh/idleberg/vscode-sfv)
