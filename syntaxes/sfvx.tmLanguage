@@ -21,7 +21,7 @@
 
         <dict>
             <key>match</key>
-            <string>\s+\w{32,128}$</string>
+            <string>\s+(MD5|SHA(1|256|512)):\w{32,128}$</string>
             <key>name</key>
             <string>constant.other.sfv.extended</string>
         </dict>

@@ -9,13 +9,18 @@
         "name": "Jan T. Sott",
         "url": "http://github.com/idleberg"
     },
-    "main": "./readme.md",
+    "main": "./lib/index.js",
     "scripts": {
-        "build": "gulp",
-        "lint": "vscode-linter",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run lint",
-        "vscode:prepublish": "npm run build"
+      "compile": "npm run build",
+      "build": "tsup",
+      "dev": "npm run start",
+      "fix": "eslint --fix ./src",
+      "lint:ts": "eslint ./src",
+      "lint": "npm-run-all --parallel lint:*",
+      "prepare": "husky",
+      "start": "npm run build -- --watch",
+      "test": "npm run lint",
+      "vscode:prepublish": "npm run build"
     },
     "keywords": [
         "sfv",
@@ -29,30 +34,15 @@
     "bugs": {
         "url": "https://github.com/idleberg/vscode-sfv/issues"
     },
-    "dependencies": {
-        "simple-file-verification": "^1.1.0"
-    },
-    "devDependencies": {
-        "gulp": "^4.0.2",
-        "gulp-raster": "^0.2.0",
-        "gulp-rename": "^2.0.0",
-        "husky": ">=4 <5",
-        "vscode": "^1.1.37",
-        "vscode-linter": "^0.3.1"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run test"
-        }
-    },
     "icon": "images/logo.png",
     "engines": {
-        "vscode": "^1.0.0"
+        "vscode": "^1.52.0"
     },
     "categories": [
         "Programming Languages"
     ],
     "activationEvents": [
+        "onCommand:extension.sfv.create",
         "onLanguage:sfv"
     ],
     "contributes": {
@@ -91,6 +81,44 @@
                 "scopeName": "source.sfv.extended",
                 "path": "./syntaxes/sfvx.tmLanguage"
             }
+        ],
+        "commands": [
+            {
+                "command": "extension.sfv.create",
+                "title": "SFV: Create"
+            },
+            {
+                "command": "extension.sfv.verify",
+                "title": "SFV: Verify"
+            }
         ]
+    },
+    "dependencies": {
+        "simple-file-verification": "^2.0.3"
+    },
+    "devDependencies": {
+      "@eslint/js": "^8.56.0",
+      "@types/node": "^20.11.19",
+      "@types/vscode": "^1.52.0",
+      "@typescript-eslint/eslint-plugin": "^7.0.1",
+      "@typescript-eslint/parser": "^7.0.1",
+      "eslint": "9.0.0-beta.0",
+      "eslint-plugin-jsonc": "^2.13.0",
+      "husky": "^9.0.11",
+      "lint-staged": "^15.2.2",
+      "npm-run-all2": "^6.1.2",
+      "prettier": "^3.2.5",
+      "tsup": "^8.0.2",
+      "typescript": "^5.3.3",
+      "typescript-eslint": "^7.0.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run test"
+        }
+    },
+    "lint-staged": {
+        "*.ts": "eslint --cache --fix",
+        "*.json": "jsonlint --quiet"
     }
 }
