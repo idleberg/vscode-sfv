@@ -1,10 +1,9 @@
 # vscode-sfv
 
-[![The MIT License](https://flat.badgen.net/badge/license/MIT/orange)](http://opensource.org/licenses/MIT)
-[![GNU General Public License](https://flat.badgen.net/badge/license/GPL%20v2/orange)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![GitHub](https://flat.badgen.net/github/release/idleberg/vscode-sfv)](https://github.com/idleberg/vscode-sfv/releases)
-[![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/installs-short/idleberg.sfv.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=idleberg.sfv)
-[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/vscode-sfv)](https://circleci.com/gh/idleberg/vscode-sfv)
+[![Version](https://img.shields.io/github/v/release/idleberg/vscode-sfv?style=for-the-badge)](https://github.com/idleberg/vscode-sfv/releases)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/idleberg.sfv?style=for-the-badge&label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=idleberg.sfv)
+[![Open VSX Downloads](https://img.shields.io/open-vsx/dt/idleberg/sfv?style=for-the-badge&label=Open%20VSX)](https://open-vsx.org/extension/idleberg/sfv)
+[![Build](https://img.shields.io/github/actions/workflow/status/idleberg/vscode-sfv/default.yml?style=for-the-badge)](https://github.com/idleberg/vscode-sfv/actions)
 
 Syntax highlighting for SFV files (see [Simple File Verification](https://www.wikiwand.com/en/Simple_file_verification)). Also supports extended SFV files (`.sfvx`) as introduced by [`sfv-cli`](https://www.npmjs.com/package/sfv-cli).
 
