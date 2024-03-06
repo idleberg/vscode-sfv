@@ -9,3 +9,4 @@ vendor/
 yarn.lock
 *.sfv
 *.sfvx
+.eslintcache
