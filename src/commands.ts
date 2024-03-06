@@ -29,7 +29,7 @@ export async function create() {
 
 	const channel = window.createOutputChannel('SFV', selectedAlgorithm === 'crc32' ? 'sfv' : 'sfvx');
 	channel.clear();
-	channel.appendLine(`Generating checksums for ${result.length} ${result.length === 1 ? 'file' : 'files'}...`);
+	channel.appendLine(`; vscode-sfv ${new Date().toISOString()}`);
 	channel.appendLine('');
 
 	await Promise.all(result.map(async item => {
@@ -37,7 +37,7 @@ export async function create() {
 			const checksum = await checksumFromFile(item.path, selectedAlgorithm);
 			channel.appendLine(`${item.name}${' '.repeat(longestString - item.name.length + 1)}${checksum}`);
 		} catch (error) {
-			channel.appendLine(`Skipping ${item.name}...`);
+			console.warn(`[idleberg.sfv] Skipping ${item.name}...`);
 		}
 	}));
 
