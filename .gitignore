@@ -7,3 +7,5 @@ todo.md
 tsconfig.tsbuildinfo
 vendor/
 yarn.lock
+*.sfv
+*.sfvx
