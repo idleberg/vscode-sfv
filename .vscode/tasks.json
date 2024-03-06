@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Watch",
+        "type": "npm",
+        "script": "start",
+        "presentation": {
+          "clear": true,
+          "focus": false,
+          "group": "default",
+          "panel": "shared",
+          "showReuseMessage": true
+        }
+      },
+      {
+        "label": "Shell",
+        "type": "shell",
+        "command": "eval",
+        "args": [
+          "$SHELL"
+        ],
+        "presentation": {
+          "clear": true,
+          "focus": false,
+          "group": "default",
+          "panel": "shared",
+          "showReuseMessage": true
+        }
+      },
+      {
+        "label": "__dev__",
+        "dependsOn": [
+          "Watch",
+          "Shell"
+        ],
+        "runOptions": {
+          "runOn": "folderOpen"
+        }
+      }
+    ]
+  }

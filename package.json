@@ -118,7 +118,6 @@
         }
     },
     "lint-staged": {
-        "*.ts": "eslint --cache --fix",
-        "*.json": "jsonlint --quiet"
+        "*.ts": "eslint --cache --fix"
     }
 }
