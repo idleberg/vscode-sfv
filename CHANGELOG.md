@@ -1,3 +1,8 @@
+# v0.3.0 [#](https://github.com/idleberg/vscode-sfv/releases/tag/0.3.0)
+
+- add `SFV: Create` command
+- improve syntax grammar
+- update dependencies
 
 # v0.2.0 [#](https://github.com/idleberg/vscode-sfv/releases/tag/0.2.0)
 
