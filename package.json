@@ -2,7 +2,7 @@
 	"name": "sfv",
 	"displayName": "Simple File Verification",
 	"description": "Language support for SFV files",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"publisher": "idleberg",
 	"license": "MIT OR GPL-2.0",
 	"author": {
