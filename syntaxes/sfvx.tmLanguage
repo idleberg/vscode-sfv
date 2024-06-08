@@ -21,9 +21,9 @@
 
         <dict>
             <key>match</key>
-            <string>\s+(MD5|SHA(1|256|512)):\w{32,128}$</string>
+            <string>\b((MD5|SHA(1|256|512)):\w{32,128})$</string>
             <key>name</key>
-            <string>constant.other.sfv.extended</string>
+            <string>constant.language.sfv.extended</string>
         </dict>
     </array>
 
