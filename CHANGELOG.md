@@ -1,3 +1,8 @@
+# v0.3.1 [#](https://github.com/idleberg/vscode-sfv/releases/tag/v0.3.1)
+
+- fix `tsup` config
+- update dependencies
+
 # v0.3.0 [#](https://github.com/idleberg/vscode-sfv/releases/tag/v0.3.0)
 
 - add `SFV: Create` command
