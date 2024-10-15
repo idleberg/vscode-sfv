@@ -7,7 +7,7 @@ export default defineConfig({
 	external: ['vscode'],
 	format: 'cjs',
 	minify: true,
-	noExternal: ['dot-prop'],
+	noExternal: ['simple-file-verification', 'vscode-get-config'],
 	target: 'es2020',
 	outDir: 'lib',
 });
