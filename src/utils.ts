@@ -29,6 +29,7 @@ export async function getFiles(projectPath: string, items: string[]): Promise<Re
 					type: 'file',
 				});
 			}
+			/* eslint-disable @typescript-eslint/no-unused-vars */
 		} catch (error) {
 			console.warn(`[idleberg.sfv] File not found: ${item}`);
 		}
